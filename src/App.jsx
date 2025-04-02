@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const API_URL = 'https://form-backend-3-xle8.onrender.com'; // Change after backend deploy
 
-function App() { const [job, setJob] = useState({ title: '', description: '', company: '' }); 
+function App() { const [job, setJob] = useState({ title: '', description: '', company: '' })}; 
 const [jobs, setJobs] = useState([]);
 
 useEffect(() => { axios.get(API_URL).then(res => setJobs(res.data)).catch(console.error); }, []);
