@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'; 
 import axios from 'axios';
 
-const API_URL = 'https://your-backend-url.onrender.com/jobs'; // Change after backend deploy
+const API_URL = 'https://form-backend-3-xle8.onrender.com'; // Change after backend deploy
 
 function App() { const [job, setJob] = useState({ title: '', description: '', company: '' }); 
 const [jobs, setJobs] = useState([]);
